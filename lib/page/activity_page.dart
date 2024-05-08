@@ -3,8 +3,8 @@ import 'package:chit_chat/provider/activity_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class ActivityScreen extends ConsumerWidget {
-  const ActivityScreen({super.key});
+class ActivityPage extends ConsumerWidget {
+  const ActivityPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

@@ -1,8 +1,9 @@
+import 'package:chit_chat/routes/route_name.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +16,17 @@ class HomeScreen extends StatelessWidget {
           children: [
             FilledButton.icon(
               onPressed: () {
-                context.push('/activity');
+                context.push(RouteNames.activity);
               },
               icon: const Icon(Icons.arrow_circle_right_outlined),
               label: const Text('Pull to refresh'),
+            ),
+            FilledButton.icon(
+              onPressed: () {
+                context.push(RouteNames.chat);
+              },
+              icon: const Icon(Icons.arrow_circle_right_outlined),
+              label: const Text('Chat'),
             ),
             const SafeArea(
               top: false,
